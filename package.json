@@ -1,0 +1,40 @@
+{
+  "name": "easy-axios",
+  "version": "1.0.0-alpha.1",
+  "description": "easy-axios",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js src/**/*",
+    "lint-fix": "eslint index.js src/**/* --fix",
+    "pre-commit": "npm run lint",
+    "test": "babel test/index.js -o test/index.babel.js && node test/index.babel.js"
+  },
+  "pre-commit": "pre-commit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doudounannan/easy-axios.git"
+  },
+  "keywords": [
+    "easy-axios"
+  ],
+  "author": "qq616079491@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doudounannan/easy-axios/issues"
+  },
+  "homepage": "https://github.com/doudounannan/easy-axios#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-web-app": "^1.0.0",
+    "pre-commit": "^1.2.2"
+  },
+  "peerDependencies": {
+    "axios": "0.x",
+    "babel-polyfill": "6.x"
+  }
+}
