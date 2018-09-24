@@ -1,6 +1,6 @@
 {
   "name": "easy-axios",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "easy-axios",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,7 @@
     "url": "https://github.com/doudounannan/easy-axios/issues"
   },
   "homepage": "https://github.com/doudounannan/easy-axios#readme",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
