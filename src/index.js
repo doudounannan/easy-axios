@@ -33,30 +33,19 @@ axios.interceptors.response.use(function (response) {
 });
 
 async function get (options) {
-    if (options.method && options.method !== 'get') {
-        return Promise.reject(new Error('parameter method must be get!'));
-    }
-
-    Object.assign(options, {
+    const fetchOption = Object.assign({
         method: 'get'
-    });
-
-    const res = await axios(options);
+    }, options);
+    const res = await axios(fetchOption);
 
     return res;
 }
 
 async function post (options) {
-    if (options.method && options.method !== 'post') {
-        return Promise.reject(new Error('parameter method must be post!'));
-    }
-
-    Object.assign(options, {
-        method: 'post',
-        data: {}
-    });
-
-    const res = await axios(options);
+    const fetchOption = Object.assign({
+        method: 'post'
+    }, options);
+    const res = await axios(fetchOption);
 
     return res;
 }
